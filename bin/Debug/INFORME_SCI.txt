@@ -1,0 +1,16 @@
+═══════════════════════════════════════════
+     SISTEMA CONTRA INCENDIO - SCI        
+     INFORME DE EVENTOS RECIENTES         
+     Generado: 29/05/2026 23:42:05
+═══════════════════════════════════════════
+
+[29/05/2026 23:40:36] ALARMA ▓ Piso 3 - Sector E ▓ Temp: 93°C ▓ Humo: 25%
+[29/05/2026 23:41:10] CONTROLADO ▓ Piso 3 - Sector E ▒ Temp final: 20°C ▓ Humo final: 1%
+
+═══════════════════════════════════════════
+     RESUMEN FINAL                        
+═══════════════════════════════════════════
+  Total de alarmas detectadas  : 1
+  Total de incendios controlados: 1
+  Total de eventos registrados  : 2
+═══════════════════════════════════════════
