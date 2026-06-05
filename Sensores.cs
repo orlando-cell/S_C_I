@@ -88,6 +88,16 @@ namespace S_C_I
                 }
                 Thread.Sleep(2000);
 
+                int TemMin = 15, TemMax = 49;
+                int HumoMin = 0, HumoMax = 19;
+
+                historial.AgregarEvento(
+                    $"MONITOREO DETENIDO ▓ " +
+                    $"Sin eventos de incendio ▓ " +
+                    $"Temperaturas estables entre {TemMin}°C - {TemMax}°C ▓ " +
+                    $"Humo estable entre {HumoMin}% - {HumoMax}%"
+                    );
+
             }
             Console.ReadKey();
         }
@@ -182,7 +192,7 @@ namespace S_C_I
             Console.WriteLine("  ➜  ASCENSORES:         DESACTIVADOS");
             Console.WriteLine("  ➜  LUCES ESTROBOSCÓP:  ACTIVAS");
             Console.WriteLine("══════════════════════════════════════════════");
-            Thread.Sleep(2000);
+            Thread.Sleep(6000);
 
             int TemActual = temps[pe, se];
             int HumoActual = humos[pe, se];

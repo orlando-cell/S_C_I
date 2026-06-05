@@ -10,6 +10,7 @@ namespace S_C_I
     public class PanelCentral
     {
         private string EstadoPanel = "NORMAL";
+        private int Monitoreos = 0 ;
         private Historial historial; //Guarda eventos
         private Sensores sensores; //Activa protocolos
 
@@ -39,6 +40,7 @@ namespace S_C_I
                 string fechaHora = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
                 Console.WriteLine($"║  Fecha y Hora: {fechaHora,-30}║");
                 Console.WriteLine($"║  Estado Panel: {EstadoPanel,-30}║");
+                Console.WriteLine($"║  Monitoreso Realizados: {Monitoreos, -21}║"); //Agregamos nuevos monitoreos
                 Console.WriteLine("╠══════════════════════════════════════════════╣");
                 Console.WriteLine("║                                              ║");
                 Console.WriteLine("║       1. Monitoreo de Sensores               ║");
@@ -61,7 +63,7 @@ namespace S_C_I
                 }
                 switch (opcion)
                 {
-                    case 1: sensores.IniciarMonitoreo(); break;
+                    case 1: Monitoreos++; sensores.IniciarMonitoreo(); break;
                     case 2: historial.MostrarHistorial(); break;
                     case 3: historial.GenerarInforme(); break;
                     case 0: Salir(); break;

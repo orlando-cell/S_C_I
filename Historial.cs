@@ -8,6 +8,7 @@ namespace S_C_I
 {
    public class Historial
     {
+
         private List<string> eventos = new List<string>(); //Guarda todos los eventos
         
         public void AgregarEvento(string evento)
@@ -18,8 +19,9 @@ namespace S_C_I
         {
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Green;
+
             Console.WriteLine("╔══════════════════════════════════════════════╗");
-            Console.WriteLine("║           HISTORIAL DE EVENTOS               ║");
+            Console.WriteLine($"║           Total de eventos: {eventos.Count,-17}║");
             Console.WriteLine("╠══════════════════════════════════════════════╣");
 
             if (eventos.Count == 0)
@@ -86,11 +88,14 @@ namespace S_C_I
 
                 informe.Add("");
                 informe.Add("═══════════════════════════════════════════");
-                informe.Add("     RESUMEN FINAL                        ");
+                informe.Add("           RESUMEN FINAL                   ");
                 informe.Add("═══════════════════════════════════════════");
-                informe.Add($"  Total de alarmas detectadas  : {contAlarmas}");
-                informe.Add($"  Total de incendios controlados: {contControlado}");
-                informe.Add($"  Total de eventos registrados  : {eventos.Count}");
+                string FechaCompleta = DateTime.Now.ToString("dddd dd 'de' MMMM 'del' yyyy 'a las' HH:mm:ss");
+                informe.Add($" Total de alarmas detectadas  : {contAlarmas}");
+                informe.Add($" Total de incendios controlados : {contControlado}");
+                informe.Add($" Total de eventos registrados : {eventos.Count}");
+                informe.Add("");
+                informe.Add($" Informe generado el : {FechaCompleta}");
                 informe.Add("═══════════════════════════════════════════");
 
                 string nombreArchivo = "INFORME_SCI.txt";
