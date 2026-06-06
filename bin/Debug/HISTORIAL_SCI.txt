@@ -1,0 +1,2 @@
+[05/06/2026 20:13:59] ALARMA ▓ Piso 3 - Sector E ▓ Temp: 72°C ▓ Humo: 77%
+[05/06/2026 20:14:45] CONTROLADO ▓ Piso 3 - Sector E ▒ Temp final: 20°C ▓ Humo final: 1%

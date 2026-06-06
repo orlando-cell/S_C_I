@@ -88,17 +88,23 @@ namespace S_C_I
                 }
                 Thread.Sleep(2000);
 
-                int TemMin = 15, TemMax = 49;
-                int HumoMin = 0, HumoMax = 19;
-
-                historial.AgregarEvento(
-                    $"MONITOREO DETENIDO ▓ " +
-                    $"Sin eventos de incendio ▓ " +
-                    $"Temperaturas estables entre {TemMin}°C - {TemMax}°C ▓ " +
-                    $"Humo estable entre {HumoMin}% - {HumoMax}%"
-                    );
-
             }
+
+            int TemMin = 15, TemMax = 49;
+            int HumoMin = 0, HumoMax = 19;
+
+            historial.AgregarEvento(
+                $"MONITOREO DETENIDO ▓ " +
+                $"Sin eventos de incendio ▓ " +
+                $"Temperaturas estables entre {TemMin}°C  -  {TemMax}°C ▓ " +
+                $"Humo estable entre {HumoMin}%  -  {HumoMax}%"
+                );
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("══════════════════════════════════════════════");
+            Console.WriteLine("  Monitoreo detenido. Resumen guardado.       ");
+            Console.WriteLine("══════════════════════════════════════════════");
+            Thread.Sleep(1500);
             Console.ReadKey();
         }
         private void MostrarTabla()
