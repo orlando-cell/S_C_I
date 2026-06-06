@@ -21,7 +21,7 @@ namespace S_C_I
             Console.ForegroundColor = ConsoleColor.Green;
 
             Console.WriteLine("╔══════════════════════════════════════════════╗");
-            Console.WriteLine($"║           Total de eventos: {eventos.Count,-17}║");
+            Console.WriteLine("║            Historial de Eventos              ║");
             Console.WriteLine("╠══════════════════════════════════════════════╣");
 
             if (eventos.Count == 0)
