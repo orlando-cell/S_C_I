@@ -1,2 +1,0 @@
-[05/06/2026 19:40:28] ALARMA ▓ Piso 1 - Sector B ▓ Temp: 50°C ▓ Humo: 74%
-[05/06/2026 19:41:16] CONTROLADO ▓ Piso 1 - Sector B ▒ Temp final: 20°C ▓ Humo final: 1%
